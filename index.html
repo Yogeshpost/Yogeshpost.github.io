@@ -6,10 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Forty by HTML5 UP</title>
+		<title>YOGESHPOST</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+  <link href="assets/css/jquery.lightroom.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -62,9 +64,10 @@
 										<img src="images/2016\.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href=https://youtu.be/o-u2O2aSJSE class="link">Sunburn 2016</a></h3>
+										<h3><a data-fancybox href=https://youtu.be/o-u2O2aSJSE class="link jlr_item">Sunburn 2016</a></h3>
 										<p>Event</p>
 									</header>
+		
 								</article>
 								<article>
 									<span class="image">
@@ -329,6 +332,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+			<script src="assets/js/jquery.lightroom.js"></script>
+			<script src="assets/js/jquery.fancybox.js"></script>
+			<script type="text/javascript">
+				$("#ttt").lightroom({
+				  image_container_selector: ".jlr_item",
+				  img_selector: "img.jlr_img",
+				  img_class_loaded: "jlr_loaded",
+				  img_space: 5,
+				  img_mode: 'min',
+				  init_callback: function (elem) { $(elem).removeClass("gray_out") }
+				}).init();
+			  </script>
 
 	</body>
 </html>
