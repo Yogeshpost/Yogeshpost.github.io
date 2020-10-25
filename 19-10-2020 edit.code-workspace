@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/Website Templates/castlennest"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Yogeshpost.github.io"
+	}
+}
